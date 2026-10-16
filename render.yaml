@@ -1,0 +1,13 @@
+# Blueprint de Render para el backend (Node + Express)
+services:
+  - type: web
+    name: tareas-api
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      # "*" mientras pruebas; luego cámbialo por la URL real de Vercel (sin "/" final)
+      - key: CLIENTE_URL
+        value: "*"

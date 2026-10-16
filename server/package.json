@@ -1,0 +1,15 @@
+{
+  "name": "tareas-api",
+  "version": "1.0.0",
+  "description": "API REST de tareas (Node.js + Express)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

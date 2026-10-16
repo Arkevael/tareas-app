@@ -1,0 +1,17 @@
+# .gitignore — qué NO subir a GitHub
+
+# dependencias (se regeneran con npm install)
+node_modules/
+
+# build de producción (lo genera Vercel)
+dist/
+
+# variables de entorno locales
+.env
+.env.*
+
+# excepción: las plantillas de variables SÍ se suben
+!.env.example
+
+*.log
+.DS_Store

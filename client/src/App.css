@@ -1,0 +1,102 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #e0e7ff, #f5f3ff);
+  color: #1f2937;
+}
+
+.contenedor {
+  max-width: 520px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
+}
+
+h1 { margin-top: 0; text-align: center; color: #4338ca; }
+
+.estado { text-align: center; margin-top: 4rem; font-size: 1.1rem; }
+
+.formulario { display: flex; gap: 0.5rem; margin-bottom: 1.25rem; }
+
+.formulario input {
+  flex: 1;
+  padding: 0.65rem 0.8rem;
+  border: 2px solid #c7d2fe;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+.formulario input:focus { border-color: #6366f1; }
+
+.formulario button {
+  padding: 0.65rem 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: #6366f1;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.formulario button:hover { background: #4f46e5; }
+
+.lista { list-style: none; margin: 0; padding: 0; }
+
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.5rem;
+  background: #f9fafb;
+  border-radius: 10px;
+  border-left: 4px solid #6366f1;
+}
+.tarea span { flex: 1; cursor: pointer; user-select: none; }
+.tarea.completada { border-left-color: #10b981; }
+.tarea.completada span { text-decoration: line-through; color: #9ca3af; }
+
+.btn-eliminar {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.btn-eliminar:hover { opacity: 1; }
+
+.vacio { text-align: center; color: #6b7280; }
+
+.input-editar {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 2px solid #6366f1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.resumen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.btn-limpiar {
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+  cursor: pointer;
+}
+.btn-limpiar:hover { background: #fecaca; }
